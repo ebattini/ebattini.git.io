@@ -4,35 +4,69 @@
   <meta charset="utf-8">
   <title> Hello! </title>
 
-  <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <!--my CSS-->
+  <link rel="stylesheet" type="text/css" href="css/united.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-
 </head>
-
 <body>
 
-  <div>
-    <h1>Elizabeth Battini</h1>
-    <h2> About Me </h2>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid text-center">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">E_Battini</a>
+      </div>
 
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="jumbotron text-center width=40%">
+    <h1>Elizabeth Battini </h1>
+    <h2>About Me</h2>
+    <p id="p"><a href="http://www.laanimalservices.com/"><img src="http://azdogadoption.com/wp-content/uploads/2016/03/save_a_life_adopt_a_shelter_pet.jpg" alt="" /></a></p>
+    <p>Click on the image above to learn more about the adoption process!</p>
+  </div>
+
+  <div class="jumbotron text-center width=40%">
     <p>
-      <h3><a href="http://www.laanimalservices.com/"><img src="http://azdogadoption.com/wp-content/uploads/2016/03/save_a_life_adopt_a_shelter_pet.jpg" alt="" /></a></h3>
-      <h4>Click on the image above to learn more about the adoption process! </h4>
+      <h3>And click here to hear about the Story of Corny!</h3>
+      <a href="pages/my-pet.html"><button class="btn btn-info">Cornelius</button></a>
     </p>
   </div>
 
-  <div>
-    <p>
-      <br />And click here to hear about the Story of Corny!
-      <h3>
-        <a href="pages/my-pet.html"><button>Cornelius</button></a>
-      </h3>
-    </p>
-  </div>
-
-  <div>
+  <div class="jumbotron">
     <p>
       <ul>
         <li>I am a Los Angeles native.</li>
@@ -44,6 +78,9 @@
   </div>
 
   <hr>
-
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- bootstrap's javascript file -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
