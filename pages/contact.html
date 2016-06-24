@@ -4,18 +4,35 @@
   <title>a form</title>
 </head>
 <body>
-  <div>"
+  <div>
     <form action="contactform"
       method="POST">
       <div>enter your name: <input type="text" name="name"></div>
       <div>enter your email: <input type="email" name="email"></div>
       <div class="form-group">
-        <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+        <label for="textArea" class="col-lg-2 control-label">Tell me a little about yourself</label>
         <div class="col-lg-10">
           <textarea class="form-control" rows="3" id="textArea" name="message"></textarea>
         </div>
       </div>
 
+      <div class="form-group">
+        <label class="col-lg-2 control-label">Which do you prefer?</label>
+        <div class="col-lg-10">
+          <div class="radio">
+            <label>
+              <input type="radio" name="pets" id="dogs" value="dogs" checked="">
+              Dogs
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="cats" id="cats" value="cats">
+              Cats
+            </label>
+          </div>
+        </div>
+      </div>
 
       <div><input type="submit" value="Send"></div>
     </form>
