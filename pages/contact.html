@@ -36,47 +36,57 @@
     </div>
   </nav>
 
-
-  <div class="jumbotron float:left width=30%">
-    <form action="https://formspree.io/elizorel@msmu.edu"
-        method="POST" class="form-horizontal">
-      <div><label for="textArea" class="col-lg-2 control-label">enter your name: </label><input type="text" name="name"></div>
-      <div><label for="textArea" class="col-lg-2 control-label">enter your email: </label>
-        <input type="email" name="email">
-</div>
-      <div class="form-group">
-        <label for="textArea" class="col-lg-2 control-label">tell me a little about yourself</label>
-        <textarea class="form-control" rows="3" id="textArea" name="message"></textarea>
-        <div class="col-lg-10"> </div>
+ <form action="https://formspree.io/elizorel@msmu.edu"
+      method="POST" class="form-horizontal">
+  <fieldset>
+    <legend>Contact Me !</legend>
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Name</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputName" placeholder="Name" type="text">
       </div>
-
-      <div class="form-group">
-        <label class="col-lg-2 control-label">Which do you prefer?</label>
-        <div class="col-lg-10">
-          <span class="radio">
-            <label>
-              <input type="radio" name="pets" id="dogs" value="dogs" checked="">
-              Dogs
-            </label>
-          </span>
-          <span class="radio">
-            <label>
-              <input type="radio" name="cats" id="cats" value="cats">
+    </div>
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Emai</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="textArea" class="col-lg-2 control-label">Tell me a little about yourself</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" rows="3" id="textArea"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Which do you prefer?</label>
+      <div class="col-lg-10">
+        <div class="radio">
+          <label>
+            <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
+            Dogs
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
               Cats
-            </label>
-          </span>
+          </label>
         </div>
       </div>
-
-      <div>
-      	<input type="submit" value="Send">
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" value="Reset" class="btn btn-default">Cancel</button>
+        <button type="submit" value="Send" class="btn btn-primary">Submit</button>
       </div>
-    </form>
-  </div>
+    </div>
+  </fieldset>
+</form>
 
-  <script>
-    var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
-    </script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- bootstrap's javascript file -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
