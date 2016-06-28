@@ -43,17 +43,17 @@
   </nav>
 
   <div class = "jumbotron">
-  <span class = "hometown"></span>
-</div>
-  <script>
-    var userName = prompt("What's your name?");
-    var welcomeMsg = "Wow, that's a pretty dumb name " + userName + "!";
-    var userHome = prompt("Where did you grow up?");
+    <span class = "hometown"></span>
+  </div>
 
-    var greetingMsg = document.querySelector(".hometown");
-    console.log(greetingMsg);
+  <script>
+    var name = prompt("What's your name?");
+    var homet = prompt("Where did you grow up?");
+
+    var greeting = document.querySelector(".hometown");
+    console.log(greeting);
     //greetingMsg.innerHTML = "Hi " + userName + "! It is great to meet someone from " +userHome+ "! Welcome to California!";
-    greetingMsg.textContent = "Hi " + userName + "! It is great to meet someone from " +userHome+ "! Welcome to California!";
+    greeting.textContent = "Hi " + name + "! It is nice to meet someone from " +  homet + "! Welcome to California!";
 
   </script>
 
