@@ -1,6 +1,10 @@
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
 
 body {
-	background-image:url(../images/dogBones.jpg);	
+	background-image:url(../images/dogBones.jpg);
 	padding: 100px;
+}
+
+p, h1, h2 :not(ul) {
+	text-align: center;
 }
