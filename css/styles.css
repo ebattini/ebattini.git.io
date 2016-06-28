@@ -5,6 +5,6 @@ body {
 	padding: 100px;
 }
 
-p, h1, h2 :not(ul) {
+p, h1, h2 :not(ul, li) {
 	text-align: center;
 }
