@@ -39,16 +39,10 @@
     </nav>
 
     <div class="jumbotron">
-
+        <span class="hometown"> </span>
     </div>
 
     <script>
-      alert("welcome to my fantastic page!");
-      alert("proceed with caution");
-
-      var name = prompt("what's your name?");
-      alert("Hello " + name);
-
       var age = prompt("how old are you?");
       var hometown = prompt("where were you born?");
       var music = prompt("what is your favorite type of music?");
@@ -56,10 +50,16 @@
       var currenttown = prompt("where do you currently live?");
       var pets = prompt("do you own any pets?");
 
+      var welcome = "so nice to meet someone from ";
       }
 
       console.log("Hello " + name + " you are " + age + " years old. You were born in " + hometown + ". Your favorite type of music is " +
           music + " and your favorite food is " + food + ". You currently live in " + currenttown + ".");
+
+      document.querySelector("span.hometown").innerHTML = welcome + hometown;
+
+
+
     </script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
