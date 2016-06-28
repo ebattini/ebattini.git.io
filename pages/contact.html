@@ -2,8 +2,8 @@
 <html>
   <head>
   <title>a form</title>
-  
-  <link rel="stylesheet" type="text/css" href="../css/united.css">  
+
+  <link rel="stylesheet" type="text/css" href="../css/united.css">
 
 </head>
 <body>
@@ -27,8 +27,7 @@
             <ul class="dropdown-menu" role="menu">
               <li><a href="pages/my-pet.html">My Pet</a></li>
               <li><a href="pages/fan.html">Fan Page</a></li>
-              <li></li>
-            </ul>
+</ul>
           </li>
           <li class="active"><a href="pages/my-form.html">contact me</a></a></li>
         </ul>
@@ -39,10 +38,12 @@
 
 
   <div class="jumbotron float:left width=30%">
-    <form action="contactform"
-      method="POST">
+    <form action="https://formspree.io/elizorel@msmu.edu"
+        method="POST" class="form-horizontal">
       <div><label for="textArea" class="col-lg-2 control-label">enter your name: </label><input type="text" name="name"></div>
-      <div><label for="textArea" class="col-lg-2 control-label">enter your email: </label><input type="email" name="email"></div>
+      <div><label for="textArea" class="col-lg-2 control-label">enter your email: </label>
+        <input type="email" name="email">
+</div>
       <div class="form-group">
         <label for="textArea" class="col-lg-2 control-label">tell me a little about yourself</label>
         <textarea class="form-control" rows="3" id="textArea" name="message"></textarea>
