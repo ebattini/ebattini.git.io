@@ -23,11 +23,11 @@ while(isPlaying === true){
   }
 
   if(randHandNum === 0){
-    computerHand = "computer threw rock, fam!";
+    computerHand = "computer uses rock!";
   } else if(randHandNum === 1){
-    computerHand = "computer threw paper, fam!";
+    computerHand = "computer uses paper!";
   } else if(randHandNum === 2){
-    computerHand = "computer threw scissors, fam!";
+    computerHand = "computer uses scissors!";
   } else {
     computerHand = "error";
   }
@@ -89,7 +89,7 @@ while(isPlaying === true){
   }
 
   resultsDiv.innerHTML += "<p>user: " + userWins + "</p>";
-  resultsDiv.innerHTML += "<p>com: " + comWins + "</p>"; 
+  resultsDiv.innerHTML += "<p>com: " + comWins + "</p>";
 
 
   if(userWins === 3){
